@@ -7,3 +7,10 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+glib = { version = "0.8.0", features = ["subclassing"] }
+gstreamer = { version = "0.14.1", features = ["subclassing"] }
+
+[lib]
+name = "gstexperiment"
+crate-type = ["cdylib", "rlib"]
+path = "src/experiment.rs"
