@@ -86,7 +86,7 @@ fn plugin_init(plugin: &gstreamer::Plugin) -> Result<(), glib::BoolError> {
 // version number of this plugin, license of the plugin, source package name,
 // binary package name, origin where it comes from and the date/time of release.
 gst_plugin_define!(
-    experiment,
+    dummy,
     "My simple plugin",
     plugin_init,
     "1.0",

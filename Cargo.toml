@@ -1,16 +1,6 @@
-[package]
-name = "gst-plugins-experiment"
-version = "0.1.0"
-authors = ["Chiu-Hsiang Hsu <wdv4758h@gmail.com>"]
-edition = "2018"
+[workspace]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-glib = { version = "0.8.0", features = ["subclassing"] }
-gstreamer = { version = "0.14.1", features = ["subclassing"] }
-
-[lib]
-name = "gstexperiment"
-crate-type = ["cdylib", "rlib"]
-path = "src/experiment.rs"
+members = [
+    "gst-plugin-01-dummy-element",
+    "gst-plugin-02-dummy-src",
+]
